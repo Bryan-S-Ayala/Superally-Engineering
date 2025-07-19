@@ -16,14 +16,50 @@
   color: white;
   text-decoration: none;
   }
-  h1{
+  a:visited {
+  color: white;
+  }
+  h1 {
     font-family: "Saira";
     font-weight: 900;
+    text-align: center;
+    line-height: 15px
   }
-  p1{
+  p{
     font-family: "Saira";
-    font-weight: 900;
+    font-weight: 100;
+    text-align: left;
+    line-height: 30px
   }
+  .who-i-am {
+    display: flex;
+    align-items: center;
+    background-color: white;
+    padding: 20px;
+    border-radius: 10px;
+    outline: 2px solid #0C1B33;
+    max-width: 900px;
+    margin: 30px auto;
+  }
+
+  .bio-text {
+    flex: 1;
+  }
+
+  .bio-text p {
+    font-family: "Saira";
+    font-weight: 100;
+    text-align: left;
+    line-height: 30px;
+    color: black;
+  }
+
+  .profile-image {
+    height: 200px;
+    border-radius: 10px;
+    margin-left: 10px;
+  }
+
 </style>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width">
@@ -33,14 +69,25 @@
 
 <body>
   <nav>
-      <a href="#">Superally-Engineering</a>
-          <a href="#">Home</a>
-            <a href="#">About</a>
-            <a href="#">Help</a>
+          <a href="index.html">Home</a>
+            <a href="about.html">
+              <img src= "images/Logo.png"
+                alt= "Rallytek Engineering Logo" 
+                style="height: 60px; vertical-align: middle;">
+            </a>
+            <a href="brand-style-guide.html">Brand-Style-Guide</a>
     </nav>
-  <h1>What is Superally Engineering?</h1>
-  <p1>Superally Engineering was created with simplicity, effectiveness, and efficiency in mind. Our vision is to provide direct support to those who want to tune their rally vehicles to create a safer, more long-lasting sport.</p1>
-  <img src=images/rallycar.jpeg> 
+  <h1>
+    Who I am
+  </h1>
+  <div class= "who-i-am">
+    <div class="bio-text">
+  <p>
+    Hi, my name is Bryan Ayala and I am a rising freshman at the California Polytechnic State University San Luis Obispo! I'm pursuing a degree in Mechanical Engineering. Some of my goals include earning an internship during my freshman year, getting involved within my community through volunteering, and enjoying my time at Cal Poly. A few of my skills include being trilingual, time management, interview, and communication skills. Finally, some of my interests include volunteering, playing basketball, lifting weights, and traveling!
+  </p>
+  </div>
+  <img src="images/me.JPG" alt="Picture of me" class="profile-image">
+    </div>
   
   
   <script src="script.js"></script>
